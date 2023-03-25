@@ -40,13 +40,13 @@ public class Arrepentimiento extends Matriz{
 		}
 	}
 	
-	public void cargarArrepentimiento(int m [][]) {		
+	public void cargarArrepentimiento(int m [][]) {
+		buscarMayorGananciaColumpa(m);
 		for (int i = 0;i<MayorGanan.length;i++) {
 			for (int j= 0; j<MayorGanan.length;j++) {
 				super.matriz[j][i]= MayorGanan[i]-m[j][i];
 			}
 		}
-		super.mostrear();
 	}
 	
 	public void buscarMaxArrepentimiento() {	
@@ -60,6 +60,7 @@ public class Arrepentimiento extends Matriz{
 	}
 	
 	public int [] tomaDecision() {
+		buscarMaxArrepentimiento();
 		int min[] = new int[2];
 		min [0]= 0;
 		min [1]= MayorArrepe[0];

@@ -20,6 +20,11 @@ public class Matriz {
 			System.out.println();
 		}
 	}
+	
+	public int[][] getMatriz(){
+		return this.matriz;
+		
+	}
 
 }
 

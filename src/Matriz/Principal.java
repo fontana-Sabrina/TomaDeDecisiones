@@ -9,7 +9,6 @@ public class Principal {
 		int b=2000;	//máximo a producir 
 		Ganancias g = new Ganancias (b-a);
 		Arrepentimiento ar = new Arrepentimiento(b-a);
-		
 //		ar.getMayor();
 		g.cargarGanancias(c, v, a);		
 		g.mostrear();
